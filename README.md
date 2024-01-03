@@ -1,10 +1,7 @@
 <style>
-a[href='green'] {
-    color: green;
-    pointer-events: none;
-    cursor: default;
-    text-decoration: none;
-}
+r { color: Red }
+o { color: Orange }
+g { color: Green }
 </style>
 
 
@@ -26,6 +23,6 @@ Colorize.checkColor('purple', 'fg');<br>
 
 
 Output
-<a href="green">This text is green background color.</a>
+<r>This text is green background color.</r>
 Background color 'blue' is not defined.
 Foreground color 'purple' is not defined.
