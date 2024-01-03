@@ -7,7 +7,7 @@ The script defines a Colorize class with methods for applying foreground and bac
 ```bash
 node app.js
 
-```javascript
+
 const Colorize  = require('./colorize.js');
 console.log(Colorize.bg.green(`This text is green background color.`));<br>
 Colorize.checkColor('red', 'fg');<br>
