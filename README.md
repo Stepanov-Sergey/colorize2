@@ -16,6 +16,6 @@ Colorize.checkColor('purple', 'fg');<br>
 
 
 Output
-This text is green background color.
+$${\color{green}This text is green background color.}$$
 Background color 'blue' is not defined.
 Foreground color 'purple' is not defined.
