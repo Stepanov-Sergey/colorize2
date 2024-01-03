@@ -1,34 +1,39 @@
 class Colorize {
-  static fg = {
-    black: (text) => `\x1b[30m${text}\x1b[0m`,
-    red: (text) => `\x1b[31m${text}\x1b[0m`,
-    green: (text) => `\x1b[32m${text}\x1b[0m`,
-    yellow: (text) => `\x1b[33m${text}\x1b[0m`,
-    blue: (text) => `\x1b[34m${text}\x1b[0m`,
-    magenta: (text) => `\x1b[35m${text}\x1b[0m`,
-    cyan: (text) => `\x1b[36m${text}\x1b[0m`,
-    white: (text) => `\x1b[37m${text}\x1b[0m`,
-    // Add more colors here as needed
-  };
-  static bg = {
-    black: (text) => `\x1b[40m${text}\x1b[0m`,
-    red: (text) => `\x1b[41m${text}\x1b[0m`,
-    green: (text) => `\x1b[42m${text}\x1b[0m`,
-    yellow: (text) => `\x1b[43m${text}\x1b[0m`,
-    blue: (text) => `\x1b[44m${text}\x1b[0m`,
-    magenta: (text) => `\x1b[45m${text}\x1b[0m`,
-    cyan: (text) => `\x1b[46m${text}\x1b[0m`,
-    white: (text) => `\x1b[47m${text}\x1b[0m`,
-    // Add more background colors here as needed
-  };
+static fgcolor = {
+  black: 30,
+  red: 31,
+  green: 32,
+  yellow: 33,
+  blue: 34,
+  magenta: 35,
+  cyan: 36,
+  white: 37
+  // Добавьте больше цветов здесь при необходимости
+};
 
-  static checkColor(color, type) {
-    if (type === 'fg' && !this.fg[color]) {
-      console.log(`Foreground color '${color}' is not defined.`);
-    } else if (type === 'bg' && !this.bg[color]) {
-      console.log(`Background color '${color}' is not defined.`);
+static bgcolor = {
+  black: 40,
+  red: 41,
+  green: 42,
+  yellow: 43,
+  blue: 44,
+  magenta: 45,
+  cyan: 46,
+  white: 47
+  // Добавьте больше цветов здесь при необходимости
+};
+
+  static fg = new Proxy({}, {
+    get: function(target, fgcolor) {
+      return (text) => `\x1b[${Colorize.fgcolor[fgcolor]}m${text}\x1b[0m`;
     }
-  }
+  });
+
+  static bg = new Proxy({}, {
+    get: function(target, bgcolor) {
+      return (text) => `\x1b[${Colorize.bgcolor[bgcolor]}m${text}\x1b[0m`;
+    }
+  });
 }
 
 module.exports = Colorize;
