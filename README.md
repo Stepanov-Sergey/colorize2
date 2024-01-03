@@ -6,8 +6,9 @@ The script defines a Colorize class with methods for applying foreground and bac
 Скрипт определяет класс Colorize с методами для применения цветов переднего и заднего плана к тексту в терминале. Он содержит набор предопределенных цветов как для переднего, так и для заднего плана. Кроме того, скрипт предоставляет метод checkColor для проверки, определен ли указанный цвет.
 
 
-
-console.log(Colorize.bg.green(`This text is green background color.`));
-Colorize.checkColor('red', 'fg');
-Colorize.checkColor('blue', 'bg');
-Colorize.checkColor('purple', 'fg');
+<code>
+console.log(Colorize.bg.green(`This text is green background color.`));<br>
+Colorize.checkColor('red', 'fg');<br>
+Colorize.checkColor('blue', 'bg');<br>
+Colorize.checkColor('purple', 'fg');<br>
+</code>
