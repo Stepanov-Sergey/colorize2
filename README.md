@@ -10,8 +10,7 @@ node app.js
 
 ```
 const Colorize  = require('./colorize.js');
-console.log(Colorize.bg.green(`This text is green background color.`));<br>
-Colorize.checkColor('red', 'fg');<br>
-Colorize.checkColor('blue', 'bg');<br>
-Colorize.checkColor('purple', 'fg');<br>
+console.log(Colorize.bg.red('Этот текст имеет красный цвет фона.'));
+console.log(Colorize.fg.green('Этот текст имеет зеленый цвет текста.'));
+console.log(Colorize.bg.blue('Этот текст имеет синий цвет фона.'));
 ```
