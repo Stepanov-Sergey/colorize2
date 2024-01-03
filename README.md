@@ -1,3 +1,10 @@
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+</style>
+
+
 English:
 The script defines a Colorize class with methods for applying foreground and background colors to text in the terminal. It includes a set of predefined colors for both foreground and background. Additionally, it provides a checkColor method to verify if a specified color is defined.
 
@@ -16,6 +23,6 @@ Colorize.checkColor('purple', 'fg');<br>
 
 
 Output
-$${\color{green}This text is green background color.}$$
+<r>This text is green background color.</r>
 Background color 'blue' is not defined.
 Foreground color 'purple' is not defined.
