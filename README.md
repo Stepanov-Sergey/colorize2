@@ -23,6 +23,7 @@ Colorize.checkColor('purple', 'fg');<br>
 
 
 Output
+<span style="color:blue">some *blue* text</span>.
 <r>This text is green background color.</r>
 Background color 'blue' is not defined.
 Foreground color 'purple' is not defined.
