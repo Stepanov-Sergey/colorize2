@@ -8,17 +8,10 @@ The script defines a Colorize class with methods for applying foreground and bac
 
 node app.js
 
-
+```
 const Colorize  = require('./colorize.js');
 console.log(Colorize.bg.green(`This text is green background color.`));<br>
 Colorize.checkColor('red', 'fg');<br>
 Colorize.checkColor('blue', 'bg');<br>
 Colorize.checkColor('purple', 'fg');<br>
-
-
-Output
-
-This text is green background color.
-Background color 'blue' is not defined.
-Foreground color 'purple' is not defined.
-
+```
