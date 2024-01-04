@@ -8,6 +8,7 @@ static fgcolor = {
   tomat: 1,
   pink: 210,
   blue: 33,
+  sky:39, //небо
   indogo: 53, //индиго
   jade:34, //нефирит
   bone:187, //кость
