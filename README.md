@@ -28,3 +28,6 @@ for (const color in Colorize.bgcolor) {
   console.log(`${color}:`, Colorize.bg[color](`${color}`));
 }
 ```
+
+TODO:
+http://www.falsefriends.ru/english-colors.htm?ysclid=lqyynp8bax543792894
