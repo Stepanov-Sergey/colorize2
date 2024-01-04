@@ -41,13 +41,13 @@ static bgcolor = {
 
   static fg = new Proxy({}, {
     get: function(target, fgcolor) {
-      return (text) => `\x1b[${Colorize.fgcolor[fgcolor]}m${text}\x1b[0m`;
+      return (text) => `\x1b[38;5;${Colorize.fgcolor[fgcolor]}m${text}\x1b[0m`;
     }
   });
 
   static bg = new Proxy({}, {
     get: function(target, bgcolor) {
-      return (text) => `\x1b[${Colorize.bgcolor[bgcolor]}m${text}\x1b[0m`;
+      return (text) => `\x1b[48;5;${Colorize.bgcolor[bgcolor]}m${text}\x1b[0m`;
     }
   });
 }
