@@ -14,3 +14,17 @@ console.log(Colorize.bg.red('Этот текст имеет красный цв�
 console.log(Colorize.fg.green('Этот текст имеет зеленый цвет текста.'));
 console.log(Colorize.bg.blue('Этот текст имеет синий цвет фона.'));
 ```
+
+
+Вывод всех вариантов цветов 
+```
+console.log('Foreground colors:');
+for (const color in Colorize.fgcolor) {
+  console.log(`${color}:`, Colorize.fg[color](`${color}`));
+}
+
+console.log('Background colors:');
+for (const color in Colorize.bgcolor) {
+  console.log(`${color}:`, Colorize.bg[color](`${color}`));
+}
+```
