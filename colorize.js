@@ -1,16 +1,15 @@
 class Colorize {
 static fgcolor = {
-  black: 30,
-  red: 31,
-  green: 32,
-  grass:64,
-  yellow: 33,
-  blue: 34,
-  magenta: 35,
-  cyan: 36,
-  white: 37,
-  gray: 90,
-  orange:202,
+  black: 0,
+  red: 9,
+  grass: 64,
+  orange: 202,
+  green: 2,
+  tomat: 1,
+  pink: 210,
+  blue: 33,
+  indogo: 53
+
   // Добавьте больше цветов здесь при необходимости
 };
 
