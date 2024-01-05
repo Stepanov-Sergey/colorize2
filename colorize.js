@@ -1,20 +1,46 @@
 class Colorize {
 static fgcolor = {
-  black: 0,
-  red: 9,
-  grass: 64,
-  orange: 202,
-  green: 2,
-  tomat: 1,
-  pink: 210,
-  blue: 33,
-  sky:39, //небо
+  black: 0, //черный
+  red: 9, //красный
+  grass: 64, //трава
+  orange: 202, //оранжевый
+  green: 2, //зеленый
+  tomat: 1, //томат
+  pink: 210, //розовый
+  blue: 33, //голубой
+  sky: 117, //небо
   indogo: 53, //индиго
-  jade:34, //нефирит
-  bone:187, //кость
-  lime:109, //лайм
-  ash:188, //пепел
-  ecru: 144 //лён
+  emerald:35, //эмеральд
+  jade: 43, //нефирит
+  aquamarine:39,
+  bone: 187, //кость
+  lime: 190, //лайм
+  yellow: 220, //жёлтый
+  ash: 188, //пепел
+  ecru: 144, //лён
+  gray: 244, //серый
+  platinum: 253,
+  silver:250,
+  lead: 247,
+  blood: 88,
+  moss:108, //мох
+  salmon:203, //лосось
+  coral:204,
+  navy:19,
+  sapphire:4, //сапфир
+  ametist:92, //аметист
+  cyan:87,
+  bronze:179, //бронза
+  gold:222, //золото
+  ice:153, //лёд
+  lilac:135, //лиловый
+  ruby:124, //рубин
+  tiquoise:80, //изумруд
+  peridot:113, //перидот
+  citrine:215, //цитрин
+  mustard:179, //горчица
+  plum:54,// слива
+  ochre:172 //охра
   // Добавьте больше цветов здесь при необходимости
 };
 
