@@ -31,3 +31,7 @@ for (const color in Colorize.bgcolor) {
 
 TODO:
 http://www.falsefriends.ru/english-colors.htm?ysclid=lqyynp8bax543792894
+
+
+colorize2.js
+you write a name that is associated with the desired color. your colleague can add his own name for each color number.
