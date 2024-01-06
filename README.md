@@ -17,7 +17,7 @@ console.log(Colorize.bg.blue('Этот текст имеет синий цвет
 
 
 Вывод всех вариантов цветов 
-```
+```js
 console.log('Foreground colors:');
 for (const color in Colorize.fgcolor) {
   console.log(`${color}:`, Colorize.fg[color](`${color}`));
