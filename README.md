@@ -8,7 +8,7 @@ The script defines a Colorize class with methods for applying foreground and bac
 
 node app.js
 
-```
+```js
 const Colorize  = require('./colorize.js');
 console.log(Colorize.bg.red('Этот текст имеет красный цвет фона.'));
 console.log(Colorize.fg.green('Этот текст имеет зеленый цвет текста.'));
